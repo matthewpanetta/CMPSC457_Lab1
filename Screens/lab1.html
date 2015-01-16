@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+	
+<head>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,700,400' rel='stylesheet' type='text/css'>
+
+<meta charset="UTF-8"/>
+<meta name = "description"  content = "CMPSC 457 Lab #1 Writeup" />
+<meta name = "keywords"     content = "Matthew, Panetta, Lab, CMPSC457, OpenGL, house, 2D"/>
+<meta name = "robots"       content = "index,follow"/>
+
+<base href = "http://65.185.85.1/"/>
+
+<link rel = "stylesheet" href = "styles.css"/>
+<link rel = "icon" 		 href = "icon.ico"/>
+
+<title>CMPSC 457 Lab #1 Writeup</title>
+
+<script src="cmpsc457.js"></script>
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+		<header>
+			<h1>CMPSC 457 Lab #1</h1>
+			<h2>By: Matthew Panetta</h2>
+		</header>
+
+		<main id="content">
+			<div id="labInfo">
+				<h3>Instructions</h3>
+				<p id="directions">
+					This lab was an introductory lab to OpenGL. In this, lab I needed to:
+					<ul id="objectives">
+						<li>Draw 10 shapes</li>
+						<li>Use at least 3 colors</li>
+						<li>Use at least 1 GL_POLYGON</li>
+						<li>Use at least 1 GL_QUAD_STRIP</li>
+						<li>Use at least 1 GL_TRIANGLE_STRIP</li>
+						<li>Use at least 1 GL_TRIANGLE_FAN</li>
+						<li>Use at least 1 GL_LINE variant</li>
+					</ul>
+				</p>
+			</div>
+
+			<div id="implement-wrapper">
+				<h3>My Implementation</h3>
+				<img id="house" alt="OpenGL 2D drawing of a house" src="house.png">
+
+				<p id="implementations">
+					<ul id="info">
+						<li>I decided to draw a two dimensional house using the OpenGL primatives listed above.</li>
+						<li>There are a total of twelve shapes in the picture.</li>
+						<li>The house was created in two dimensional space using simple shapes.</li>
+						<li>The sky is a combination of a few triangle strips and fans.</li>
+					</ul>
+				</p>
+			
+
+				<div id="specs-wrapper">
+					<section id="polygons">
+						GL_POLYGONS:
+						<ul id="polygonsList">
+							<li>House Base</li>
+							<li>All Three Windows</li>
+							<li>Door</li>
+							<li>Dirt</li>
+							<li>Grass</li>
+						</ul>
+					</section>
+
+					<section id="strip">
+						GL_QUAD_STRIP:
+						<ul id="quad">
+							<li>Roof</li>
+						</ul>
+					</section>
+
+					<section id="triangles">
+						GL_TRIANGLE_STRIP:
+						<ul id="triStrip">
+							<li>Sky triangles to the left and right of the roof</li>
+						</ul>
+						GL_TRIANGLE_FAN:
+						<ul id="triFan">
+							<li>Sky squares to the left and right of the house base</li>
+						</ul>
+					</section>
+
+					<section id="line">
+						GL_LINE:
+						<ul id="lineList">
+							<li>Door Knob (Line Loop)</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+
+			<div id="code">
+				<h3>Source Code</h3>
+				<p id="sourceCode">The source code is available on: 
+					<a href="https://drive.google.com/folderview?id=0B2MQrTxqffipflZhVzVCT3NCLUtxSE5lSVJkcjZGQm9qVU5WX1poTW9EOVJsd2NKWXlwZ1k&usp=sharing">Google Drive
+				</p>
+		</main>
+	</div>
+</body>
+
+</html>
